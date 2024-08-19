@@ -95,7 +95,7 @@ document.getElementById('subscribeButton').addEventListener('click', function() 
 });
 
 function checkPremiumAccess(userId, domain) {
-    fetch(`https://your-username.github.io/repo-name/payment-status.json`)
+    fetch(`https://compasssolutionsga.github.io/google-dork/payment-status.json`)
         .then(response => response.json())
         .then(data => {
             if (data[userId] && data[userId].isPremium) {
