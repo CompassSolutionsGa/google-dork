@@ -95,10 +95,10 @@ document.getElementById('subscribeButton').addEventListener('click', function() 
 });
 
 function checkPremiumAccess(userId, domain) {
-    fetch(`https://compasssolutions.us/check-subscription?user=${userId}`)
+    fetch(`https://your-username.github.io/repo-name/payment-status.json`)
         .then(response => response.json())
         .then(data => {
-            if (data.isPremium) {
+            if (data[userId] && data[userId].isPremium) {
                 fetchAndAnalyzeBacklinks(domain);
             } else {
                 alert("You need a premium subscription to access this feature.");
