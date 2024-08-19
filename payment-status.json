@@ -1,0 +1,9 @@
+{
+    "user123": {
+        "isPremium": true,
+        "subscriptionExpiry": "2024-12-31"
+    },
+    "user456": {
+        "isPremium": false
+    }
+}
